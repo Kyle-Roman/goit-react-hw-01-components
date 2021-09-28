@@ -15,18 +15,8 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 function App() {
   return (
     <div className="App">
-      <h2
-        style={{
-          width: 200,
-          backgroundColor: 'black',
-          color: 'white',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 50,
-        }}
-      >
-        Task 1
-      </h2>
+      <h2 className="App-title">Task 1</h2>
+
       <Profile
         name={user.name}
         tag={user.tag}
@@ -36,44 +26,17 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <h2
-        style={{
-          width: 200,
-          backgroundColor: 'black',
-          color: 'white',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 50,
-        }}
-      >
-        Task 2
-      </h2>
+
+      <h2 className="App-title">Task 2</h2>
+
       <Statistics title="Upload stats" stats={statisticalData} />
-      <h2
-        style={{
-          width: 200,
-          backgroundColor: 'black',
-          color: 'white',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 50,
-        }}
-      >
-        Task 3
-      </h2>
+
+      <h2 className="App-title">Task 3</h2>
+
       <FriendList friends={friends} />
-      <h2
-        style={{
-          width: 200,
-          backgroundColor: 'black',
-          color: 'white',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: 50,
-        }}
-      >
-        Task 4
-      </h2>
+
+      <h2 className="App-title">Task 4</h2>
+
       <TransactionHistory items={transactions} />
     </div>
   );
